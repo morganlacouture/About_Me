@@ -1,5 +1,7 @@
 body {background-color:grey;
     border: 5px dotted black;
+    border-radius: 50px 50px 50px 50px; 
+    border-top-color:orange;
     padding: 100px;
     }
 
@@ -21,4 +23,5 @@ ol {float: right;
 
 ul {font-size: 40pt;
     font-weight:900;
-    font-style: italic;}
+    font-style: italic;
+    color: 98FFA8;}
