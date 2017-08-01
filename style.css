@@ -5,6 +5,20 @@ body {background-color:grey;
 
 h1 {color: pink;
     font-family: verdana;
-    border: 3px solid black;}
+    border: 3px solid black;
+    background: white;}
 
-p first-child {color:green;}    
+p first-child {color:green;}
+
+p {border: 2px groove blueviolet;
+    font-size: 30pt;}  
+    
+ol {float: right;
+    font-size:40pt;
+    font-weight:bold;
+    font-style: oblique;
+    color: yellow;}
+
+ul {font-size: 40pt;
+    font-weight:900;
+    font-style: italic;}
