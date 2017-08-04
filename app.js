@@ -27,6 +27,17 @@ question( 'Do I like music?', 'yes', 'You are correct! Who doesn\'t like music?'
 question( ' Do I own a dog?', 'no', 'You are correct! I own cats.', 'You are wrong. I own cats!' );
 question( ' Was I born without tear ducts?', 'yes', 'You are correct!', 'You are wrong!' );
 
+//putting called functions into array -- useful for more than like...5/6 question otherwise use this ^^
+
+//var questionArr ['is green my fav color?', 'thai food?', 'music?', 'dog?', 'tear ducts?'];
+//var correctAnswerArr ['yes', 'yes', 'yes', 'no', 'yes'];
+//var alertArr ['you are correct', 'why yes i do', 'you are correct', 'you are correct', 'you are correct'];
+//var wrongAnswerArr ['oh no', 'i do!', 'i do!', 'you are wrong', 'you are wrong'];
+
+//for (var i = 0; i <4; i ++) {
+// question ( questionArr [i], correctAnswerArr [i], alertArr [i], wrongAnswerArr [i]);
+//}
+
 var states = [ 'idaho', 'utah', 'colorado' ];
 
 for ( var i = 6 ; i > 0 ; i-- ) {
@@ -39,6 +50,8 @@ for ( var i = 6 ; i > 0 ; i-- ) {
 
     else { alert ( 'Sorry! Try again' );}
 }
+
+// states.includes( guess ) === to a boolean - dont need to compare it to anything like !=- -1
 
 var number = 25;
 
