@@ -1,74 +1,79 @@
-var name = prompt ('Hi! What is your name?');
+var name = prompt ( 'Hi! What is your name?' );
 
-alert ('Hi ' + name + '! My name is Morgan.');
+alert ( 'Hi ' + name + '! My name is Morgan.' );
 
-alert ('Ready to play a game?');
+alert ( 'Ready to play a game?' );
 
 var tally = 0;
 
-function question (promptMessage, correctAnswer, alertMessage, wrongAnswer){
-    console.log(correctAnswer);
+function question ( promptMessage, correctAnswer, alertMessage, wrongAnswer ){
+    console.log( correctAnswer );
 
-    var input = prompt (promptMessage).toLowerCase();
+    var input = prompt ( promptMessage ).toLowerCase();
 
-    if ( input === correctAnswer || input === correctAnswer.charAt(0)){
+    if ( input === correctAnswer || input === correctAnswer.charAt(0) ){
         tally = tally + 1;
 
-        alert (alertMessage);
+        alert ( alertMessage );
     }else{
 
-        alert (wrongAnswer);
+        alert ( wrongAnswer );
     }
 }
 
-question('Is green my favorite color?', 'yes', 'You are correct!', 'Oh no, green is my favorite color' );
-question(' Do I eat Thai food everyday of my life?', 'yes', 'Why yes I do!', 'I do! Thai food is my favorite.');
-question('Do I like music?', 'yes', 'You are correct! Who doesn\'t like music?', 'What! Of course I do!');
-question(' Do I own a dog?', 'no', 'No, I own cats!', 'You are correct! I own cats.');
-question(' Was I born without tear ducts?', 'yes', 'You are correct!', 'You are wrong!');
+question( 'Is green my favorite color?', 'yes', 'You are correct!', 'Oh no, green is my favorite color' );
+question( ' Do I eat Thai food everyday of my life?', 'yes', 'Why yes I do!', 'I do! Thai food is my favorite.' );
+question( 'Do I like music?', 'yes', 'You are correct! Who doesn\'t like music?', 'What! Of course I do!' );
+question( ' Do I own a dog?', 'no', 'You are correct! I own cats.', 'You are wrong. I own cats!' );
+question( ' Was I born without tear ducts?', 'yes', 'You are correct!', 'You are wrong!' );
 
-var states = ['idaho', 'utah', 'colorado'];
+var states = [ 'idaho', 'utah', 'colorado' ];
 
-for ( var i = 6 ; i > 0 ; i--) {
-    var guess = prompt ( name + ', can you guess what state i\'ve lived in? You have ' + i + ' guesses.'.toLowerCase());
-    if ( states.indexOf(guess) !== -1 ) {
+for ( var i = 6 ; i > 0 ; i-- ) {
+    var guess = prompt ( name + ', can you guess what state i\'ve lived in? You have ' + i + ' guesses.'.toLowerCase() );
+    if ( states.indexOf( guess ) !== -1 ) {
         tally = tally + 1;
-        alert ('Good job! Correct answers were: Idaho, Utah, and Colorado!'); 
+        alert ( 'Good job! Correct answers were: Idaho, Utah, and Colorado!' );
         break;
     }
 
-    else {alert ('Sorry! Try again');}
+    else { alert ( 'Sorry! Try again' );}
 }
-
-//TODO figure out how to add '25' if they dont guess the number in 4 tries
 
 var number = 25;
 
-for ( var i = 4 ; i > 0 ; i--) { 
+for ( var i = 4 ; i > 0 ; i-- ) { 
 
-    var answer = prompt ('Now ' + name + ', can you guess my favorite number? You have ' + i + ' guesses.');
+    var answer = prompt ( 'Now ' + name + ', can you guess my favorite number? You have ' + i + ' guesses.' );
 
-    if ( answer > 25) {
-        alert ('Too high!');
+    if ( answer > 25 ) {
+        alert ( 'Too high!' );
     }
 
-    else if (answer == 25) {
+    else if ( answer == 25 ) {
 
         tally = tally + 1;
 
-        alert ('Good Job!' );
+        alert ( 'Good Job!' );
 
         break;
+
+
     }
-    else {alert ('Too low!');}
+    else {alert ( 'Too low!' );}
 
 }
+//TODO FIGURE THIS DAMN THING OUT
+// console.log( i + 'i' );
 
-var fin = alert ('You got ' + tally + ' out of 8 correct!');
+// if (i === 2) {
+//     alert ( 'You\'re out of guesses! Correct answer was 25.' );
+//     break;
 
-if ( tally > 4) {
-    alert ('Good job, ' + name + '!')
-    ;
+var fin = alert ( 'You got ' + tally + ' out of 8 correct!' );
+
+if ( tally > 4 ) {
+    alert ( 'Good job, ' + name + '!' );
 }
 
-else {alert ('Better Luck next time!');}
+else {alert ( 'Better Luck next time!' );}
