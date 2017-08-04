@@ -1,14 +1,17 @@
 var name = prompt ('Hi! What is your name?');
 
-alert ('Wow! ' + name + ' is a really good name!'); 
+alert ('Hi ' + name + '! My name is Morgan.');
+
+alert ('Ready to play a game?');
 
 var tally = 0;
 
 function question (promptMessage, correctAnswer, alertMessage, wrongAnswer){
     console.log(correctAnswer);
+
     var input = prompt (promptMessage).toLowerCase();
 
-    if ( input === correctAnswer || input === correctAnswer.charAt(0)  ) {
+    if ( input === correctAnswer || input === correctAnswer.charAt(0)){
         tally = tally + 1;
 
         alert (alertMessage);
@@ -17,9 +20,10 @@ function question (promptMessage, correctAnswer, alertMessage, wrongAnswer){
         alert (wrongAnswer);
     }
 }
+
 question('Is green my favorite color?', 'yes', 'You are correct!', 'Oh no, green is my favorite color' );
 question(' Do I eat Thai food everyday of my life?', 'yes', 'Why yes I do!', 'I do! Thai food is my favorite.');
-question('Do I like music?', 'yes', 'You are correct!', 'What! Of course I do!');
+question('Do I like music?', 'yes', 'You are correct! Who doesn\'t like music?', 'What! Of course I do!');
 question(' Do I own a dog?', 'no', 'No, I own cats!', 'You are correct! I own cats.');
 question(' Was I born without tear ducts?', 'yes', 'You are correct!', 'You are wrong!');
 
@@ -35,6 +39,8 @@ for ( var i = 6 ; i > 0 ; i--) {
 
     else {alert ('Sorry! Try again');}
 }
+
+//TODO figure out how to add '25' if they dont guess the number in 4 tries
 
 var number = 25;
 
