@@ -17,11 +17,11 @@ function question (promptMessage, correctAnswer, alertMessage, wrongAnswer){
         alert (wrongAnswer);
     }
 }
-question('Is Green my favorite color?', 'yes', 'You are Correct', 'Oh no, Green is my favorite color' );
-question(' Do I eat Thai food everyday of my life?', 'yes', 'Why yes I do', 'I do Thai food is my favorite');
-question('Do I listen to a lot of music?', 'yes', 'Correct', 'What!!! of course I do');
-question(' Do I keep a lot of plants in my house?', 'yes', 'Yes I Do', 'You are Wrong I love plants');
-question(' Was i born without tear ducts?', 'yes', 'YOu are correct', 'you are wrong');
+question('Is green my favorite color?', 'yes', 'You are correct!', 'Oh no, green is my favorite color' );
+question(' Do I eat Thai food everyday of my life?', 'yes', 'Why yes I do!', 'I do! Thai food is my favorite.');
+question('Do I like music?', 'yes', 'You are correct!', 'What! Of course I do!');
+question(' Do I own a dog?', 'no', 'No, I own cats!', 'You are correct! I own cats.');
+question(' Was I born without tear ducts?', 'yes', 'You are correct!', 'You are wrong!');
 
 var states = ['idaho', 'utah', 'colorado'];
 
