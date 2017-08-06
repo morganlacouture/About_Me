@@ -25,20 +25,21 @@ p {border: 2px groove black;
     padding: 5%;}  
     
 ul.c {float: right;
-    font-size:40pt;
+    font-size:35pt;
     font-weight:bold;
-    font-style: oblique;
     color: black;
     border: 2px solid black;
     padding: 2%;   
 }
 
 ul.p {float: left;
-    font-size: 40pt;
+    font-size: 35pt;
     font-weight:900;
-    font-style: italic;
     color: black;
     border: 2px solid black;
     padding: 2%;
 }
+
+lh {font-style: oblique ;
+    font-size: 45pt;}
 
