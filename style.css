@@ -1,27 +1,43 @@
-body {background-color:grey;
-    border: 5px dotted black;
-    border-radius: 50px 50px 50px 50px; 
-    border-top-color:orange;
-    padding: 100px;
+body {background-image: url(images/swans.jpg);
+    border: 10px double black;
+    border-radius: 50% 50% 50% 50%;
+    padding: 5%;
+    
     }
 
-h1 {color: pink;
-    font-family: verdana;
-    border: 3px solid black;
-    background: white;}
+nav {text-align: center;}
 
-p first-child {color:green;}
+h1 {color: black;
+    font-family: 'indie flower' , cursive ;
+    font-size: 55pt ;
+    text-align: center;
+    }
 
-p {border: 2px groove blueviolet;
-    font-size: 30pt;}  
+p.b { border: 2px groove black;
+    font-size: 25pt;
+    background-color:gray;
+    padding: 5%;}
+
+p {border: 2px groove black;
+    font-size: 20pt;
+    background-color: gray;
+    padding: 5%;}  
     
-ol {float: right;
+ul.c {float: right;
     font-size:40pt;
     font-weight:bold;
     font-style: oblique;
-    color: yellow;}
+    color: black;
+    border: 2px solid black;
+    padding: 2%;   
+}
 
-ul {font-size: 40pt;
+ul.p {float: left;
+    font-size: 40pt;
     font-weight:900;
     font-style: italic;
-    color: 98FFA8;}
+    color: black;
+    border: 2px solid black;
+    padding: 2%;
+}
+
