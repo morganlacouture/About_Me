@@ -1,54 +1,92 @@
-var name = prompt ('Hi! What is your name?');
-console.log ('Hi! What is your name?');
+var name = prompt ( 'Hi! What is your name?' );
 
-alert ('Wow! ' + name + ' is a really good name!'); 
-console.log ('Wow! ' + name + ' is a really good name!');
+alert ( 'Hi ' + name + '! My name is Morgan.' );
 
-var color = prompt ( name + ', is green my favorite color?').toLowerCase();
-console.log ( name + ', is green my favorite color? ');
+alert ( 'Ready to play a game?' );
 
-// if (color === 'yes') {
-//      alert ('YOU ARE CORRECT!')
-// } else if (color === 'y') {
-//      alert ('YOU ARE CORRECT!')
-// }  else if (color === 'no') {
-//      alert ('Oh no, green IS my favorite color!')
-// }   else if (color === 'n') {
-//      alert ('Oh no, green IS my favorite color!')
-// }; 
+var tally = 0;
 
-if (color === 'yes' | color === 'y') {alert ('You are correct!')}
-else if (color === 'no' | color === 'n') {alert ('Oh no, green IS my favorite color!')};
+function question ( promptMessage, correctAnswer, alertMessage, wrongAnswer ){
+    console.log( correctAnswer );
 
-var pets = prompt ('Do I own cats or dogs?').toLowerCase();
-console.log ('Do I own cats or dogs?');
+    var input = prompt ( promptMessage ).toLowerCase();
 
-if (pets === 'cats') {alert ('You are correct! I own two beautiful babies.')}
-else if (pets === 'dogs') {alert ('Oh no, I do own cats!')};
+    if ( input === correctAnswer || input === correctAnswer.charAt(0) ){
+        tally = tally + 1;
 
-var food = prompt ('Do I eat Thai food almost every day of my life?').toLowerCase();
-console.log ('Do I eat Thai food almost every day of my life?');
+        alert ( alertMessage );
+    }else{
 
-if (food === 'yes' | food === 'y') {alert ('Why yes I do!')}
-else if (food === 'no' | food === 'n') {alert ('I do! Thai food is my favorite.')};
+        alert ( wrongAnswer );
+    }
+}
 
-var music = prompt ('Do I listen to a lot of music?').toLowerCase();
-console.log ('Do I listen to a lot of music?');
+question( 'Is green my favorite color?', 'yes', 'You are correct!', 'Oh no, green is my favorite color' );
+question( ' Do I eat Thai food everyday of my life?', 'yes', 'Why yes I do!', 'I do! Thai food is my favorite.' );
+question( 'Do I like music?', 'yes', 'You are correct! Who doesn\'t like music?', 'What! Of course I do!' );
+question( ' Do I own a dog?', 'no', 'You are correct! I own cats.', 'You are wrong. I own cats!' );
+question( ' Was I born without tear ducts?', 'yes', 'You are correct!', 'You are wrong!' );
 
-if (music === 'yes' | music === 'y') {alert ('Correct! Music is my favorite!')}
-else if (music === 'no' | music === 'n') {alert ('What! Of course I do!')};
+//putting called functions into array -- useful for more than like...5/6 question otherwise use this ^^
 
-var plants = prompt ('Do I keep a lot of plants in my house?').toLowerCase();
-console.log ('Do I keep a lot of plants in my house?');
+//var questionArr ['is green my fav color?', 'thai food?', 'music?', 'dog?', 'tear ducts?'];
+//var correctAnswerArr ['yes', 'yes', 'yes', 'no', 'yes'];
+//var alertArr ['you are correct', 'why yes i do', 'you are correct', 'you are correct', 'you are correct'];
+//var wrongAnswerArr ['oh no', 'i do!', 'i do!', 'you are wrong', 'you are wrong'];
 
-if (plants === 'yes' | plants === 'y') {alert ('Yes I do! Plants are the best.')}
-else if (plants === 'no' | plants === 'n') {alert ('You are wrong! I love plants.')};
+//for (var i = 0; i <4; i ++) {
+// question ( questionArr [i], correctAnswerArr [i], alertArr [i], wrongAnswerArr [i]);
+//}
 
-var tears = prompt ('Was I born without tearducts?').toLowerCase();
-console.log ('Was I born without tearducts?');
+var states = [ 'idaho', 'utah', 'colorado' ];
 
-if (tears === 'yes' | tears === 'y') {alert ('You are correct!')}
-else if (tears === 'no' | tears === 'n') {alert ('As a matter of fact, I was born without tearducts.')};
+for ( var i = 6 ; i > 0 ; i-- ) {
+    var guess = prompt ( name + ', can you guess what state i\'ve lived in? You have ' + i + ' guesses.'.toLowerCase() );
+    if ( states.indexOf( guess ) !== -1 ) {
+        tally = tally + 1;
+        alert ( 'Good job! Correct answers were: Idaho, Utah, and Colorado!' );
+        break;
+    }
 
-alert ('Thank you for answering my questions!');
+    else { alert ( 'Sorry! Try again' );}
+}
 
+// states.includes( guess ) === to a boolean - dont need to compare it to anything like !=- -1
+
+var number = 25;
+
+for ( var i = 4 ; i > 0 ; i-- ) { 
+
+    var answer = prompt ( 'Now ' + name + ', can you guess my favorite number? You have ' + i + ' guesses.' );
+
+    if ( answer > 25 ) {
+        alert ( 'Too high!' );
+    }
+
+    else if ( answer == 25 ) {
+
+        tally = tally + 1;
+
+        alert ( 'Good Job!' );
+
+        break;
+
+
+    }
+    else {alert ( 'Too low!' );}
+
+}
+//TODO FIGURE THIS DAMN THING OUT
+// console.log( i + 'i' );
+
+// if (i === 2) {
+//     alert ( 'You\'re out of guesses! Correct answer was 25.' );
+//     break;
+
+var fin = alert ( 'You got ' + tally + ' out of 8 correct!' );
+
+if ( tally > 4 ) {
+    alert ( 'Good job, ' + name + '!' );
+}
+
+else {alert ( 'Better Luck next time!' );}
