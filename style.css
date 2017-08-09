@@ -1,45 +1,59 @@
-body {background-image: url(images/swans.jpg);
-    border: 10px double black;
+body {
+    background-image: url(images/pinktrippy.jpg);
+    border: 30px double #BA910B;
     border-radius: 50% 50% 50% 50%;
-    padding: 5%;
-    
-    }
+    padding: 5%;  
+}
 
-nav {text-align: center;
-    font-size: 15pt;}
+nav {
+    text-align: center;
+    font-size: 15pt;
+    background-color: grey;
+}
 
-h1 {color: black;
-    font-family: 'indie flower' , cursive ;
+h1 {
+    color: black;
+    font-family: 'Zilla Slab Highlight', cursive;
     font-size: 55pt ;
     text-align: center;
-    }
+    text-decoration: underline;
+}
 
-p.b { border: 2px groove black;
+p.b {
+     border: 2px groove black;
     font-size: 25pt;
-    background-color:gray;
-    padding: 5%;}
+    background-image: url(images/wood.jpg);
+    padding: 5%;
+}
 
-p {border: 2px groove black;
+p {
+    border: 2px groove black;
     font-size: 20pt;
-    background-color: gray;
-    padding: 5%;}  
+    background-image: url(images/wood.jpg);
+    padding: 5%;
+}  
     
 ul.c {float: right;
     font-size:35pt;
     font-weight:bold;
     color: black;
     border: 2px solid black;
-    padding: 2%;   
+    padding: 2%; 
+    background-color: grey;
 }
 
-ul.p {float: left;
+ul.p {
+    float: left;
     font-size: 35pt;
     font-weight:900;
     color: black;
     border: 2px solid black;
     padding: 2%;
+    background-color: grey;
 }
 
-lh {font-style: oblique ;
-    font-size: 45pt;}
+lh {
+    font-style: oblique ;
+    font-size: 45pt;
+}
 
